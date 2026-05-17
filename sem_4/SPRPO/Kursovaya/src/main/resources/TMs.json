@@ -1,0 +1,161 @@
+[ {
+  "alphabet" : [ "0", "1", "#" ],
+  "tape" : {
+    "leftTape" : [ "0", "1", "0" ],
+    "rightTape" : [ "#" ],
+    "blank" : "#",
+    "headPos" : 3
+  },
+  "table" : {
+    "table" : {
+      "q0-#" : {
+        "nextState" : "qt",
+        "writeChar" : "#",
+        "move" : "STAY"
+      },
+      "q0-1" : {
+        "nextState" : "q0",
+        "writeChar" : "0",
+        "move" : "RIGHT"
+      },
+      "q0-0" : {
+        "nextState" : "q0",
+        "writeChar" : "1",
+        "move" : "RIGHT"
+      }
+    }
+  },
+  "halted" : false,
+  "currentState" : "q0",
+  "haltStates" : [ "qt" ],
+  "history" : [ {
+    "tape" : {
+      "leftTape" : [ ],
+      "rightTape" : [ "1", "0", "1" ],
+      "blank" : "#",
+      "headPos" : 0
+    },
+    "state" : "q0"
+  }, {
+    "tape" : {
+      "leftTape" : [ "0" ],
+      "rightTape" : [ "0", "1" ],
+      "blank" : "#",
+      "headPos" : 1
+    },
+    "state" : "q0"
+  }, {
+    "tape" : {
+      "leftTape" : [ "0", "1" ],
+      "rightTape" : [ "1" ],
+      "blank" : "#",
+      "headPos" : 2
+    },
+    "state" : "q0"
+  }, {
+    "tape" : {
+      "leftTape" : [ "0", "1", "0" ],
+      "rightTape" : [ ],
+      "blank" : "#",
+      "headPos" : 3
+    },
+    "state" : "q0"
+  }, {
+    "tape" : {
+      "leftTape" : [ "0", "1", "0" ],
+      "rightTape" : [ "#" ],
+      "blank" : "#",
+      "headPos" : 3
+    },
+    "state" : "q0"
+  }, {
+    "tape" : {
+      "leftTape" : [ "0", "1", "0" ],
+      "rightTape" : [ "#" ],
+      "blank" : "#",
+      "headPos" : 3
+    },
+    "state" : "q0"
+  } ],
+  "owner" : "admin",
+  "name" : "test1",
+  "initialTape" : "101"
+}, {
+  "alphabet" : [ "0", "1", "#" ],
+  "tape" : {
+    "leftTape" : [ ],
+    "rightTape" : [ "1", "0", "1" ],
+    "blank" : "#",
+    "headPos" : 0
+  },
+  "table" : {
+    "table" : {
+      "q0-#" : {
+        "nextState" : "qt",
+        "writeChar" : "#",
+        "move" : "STAY"
+      },
+      "q0-1" : {
+        "nextState" : "q0",
+        "writeChar" : "0",
+        "move" : "RIGHT"
+      },
+      "q0-0" : {
+        "nextState" : "q0",
+        "writeChar" : "1",
+        "move" : "RIGHT"
+      }
+    }
+  },
+  "halted" : false,
+  "currentState" : "q0",
+  "haltStates" : [ "qt" ],
+  "history" : [ ],
+  "owner" : "admin",
+  "name" : "test2",
+  "initialTape" : "101"
+}, {
+  "alphabet" : [ "0", "1", "#" ],
+  "tape" : {
+    "leftTape" : [ ],
+    "rightTape" : [ "1", "0", "1", "1", "0" ],
+    "blank" : "#",
+    "headPos" : 0
+  },
+  "table" : {
+    "table" : {
+      "q1-0" : {
+        "nextState" : "qy",
+        "writeChar" : "0",
+        "move" : "STAY"
+      },
+      "q0-1" : {
+        "nextState" : "q0",
+        "writeChar" : "1",
+        "move" : "RIGHT"
+      },
+      "q0-0" : {
+        "nextState" : "q0",
+        "writeChar" : "0",
+        "move" : "RIGHT"
+      },
+      "q1-1" : {
+        "nextState" : "qn",
+        "writeChar" : "1",
+        "move" : "STAY"
+      },
+      "q0-#" : {
+        "nextState" : "q1",
+        "writeChar" : "#",
+        "move" : "LEFT"
+      }
+    }
+  },
+  "halted" : false,
+  "currentState" : "q0",
+  "haltStates" : [ "qy", "qn" ],
+  "history" : [ ],
+  "owner" : "admin",
+  "name" : "even_or_not",
+  "initialTape" : "10110"
+} ]
