@@ -1,0 +1,10 @@
+[ {
+  "username" : "JonyJon",
+  "password" : "$2a$12$W3EGJSW1QR90HaqWLeljr.ISRyevyiQ1rSsxPT01FbNrOO.gakwOi"
+}, {
+  "username" : "admin",
+  "password" : "$2a$12$Q6c9v1.W2pE3SeRT81FMKe.XTTysQGjpoffpZmjYe.wpblcBCtqDy"
+}, {
+  "username" : "testUser",
+  "password" : "$2a$12$USnBEIKb2us54ibIClPLlOBCJDkJcwPj1wD0I9XyM4INyqPvWIpIO"
+} ]
